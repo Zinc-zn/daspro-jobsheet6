@@ -12,10 +12,13 @@ public class Pemilihan2Percobaan1_14 {
         boolean Kabisat = false;
 
         if  ((tahun % 4) == 0){ 
-            if ((tahun % 100) != 0)
+            if ((tahun % 100) == 0)
                 if ((tahun % 400) == 0)
                 Kabisat = true;
+        }else{
+            Kabisat = true;
         }
+
         if (Kabisat) {
             System.out.println("tahun kabisat");
         } else {
